@@ -1,21 +1,23 @@
-<!-- @format -->
-
 # Autocrat FAQ
 
 ## What is Autocrat?
 
-**Autocrat** is Interlock's API that tells you if a URL is malicious or not.
+**Autocrat** is Interlock's API that instantly tells you if a URL is malicious or not.
 
 - It takes a URL as a string in a `POST` request
 - It returns a boolean: `true` for safe and `false` for malicious
 
+## How does it work?
+
+Autocrat uses Interlock's threat detecting AI that can instantly analyze any URL and identify if it's malicious.
+
 ## Autocrat is in beta
 
-Autocrat is in its early stages as an enterprise product. It will occasionally go down or return errors.
+Autocrat is an early-stage enterprise product. It may briefly go down or return errors.
 
 ## Pricing info
 
-For details regarding price and payment schedule, please contact Interlock CEO Rick Deacon at rick@interlock.network
+For price and payment info, please contact Interlock CEO Rick Deacon at rick@interlock.network
 
 ## How to get an API key
 
@@ -58,7 +60,7 @@ To use Autocrat, make a `POST` request with the following shape:
 **Specific errors**
 
 - "Unsupported protocol" i.e. FTP, SSH, or anything not HTTP/S
-- "Malformed URL" i.e. google....com or google,com
+- "Malformed URL"
 - "Scan took too long"
 - "Site offline (code 404)"
 - "Too many redirects"
